@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onClick="window.location.reload()" id="resetButton">
-        <div class="circulo">
-            <h1><?php echo rand(1, 30) ?></h1>
-        </div>
-    </button>
+    <a href="index.php">
+        <button id="resetButton">
+            <div class="circulo">
+                <h1><?php echo rand(1, 30) ?></h1>
+            </div>
+        </button>
+    </a>        
 </body>
 </html>
