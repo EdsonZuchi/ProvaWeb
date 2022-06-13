@@ -9,18 +9,17 @@
 </head>
 <body>
     <?php 
-for ($i = 65; $i < 91; $i++){
-    $red = rand(0,255);
-    $green = rand(0,255);
-    $blue = rand(0,255);
-  ?>
+        for ($i = 65; $i < 91; $i++){
+            $red = rand(0,255);
+            $green = rand(0,255);
+            $blue = rand(0,255);
+    ?>
 
-<div class="cont" style="background-color: rgb(<?php echo "$red,$green,$blue" ?>");>
-<?php echo chr ($i); ?>    
-</div>
+    <div class="cont" style="background-color: rgb(<?php echo "$red,$green,$blue" ?>");>
+    <?php echo chr ($i); ?>    
+    </div>
 
 <?php } ?>      
-
 
 </body>
 </html>
