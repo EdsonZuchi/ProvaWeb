@@ -1,0 +1,33 @@
+.background{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(img/perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+.img_result{
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5%;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px black;
+    margin-right: 15px;
+}
+
+fieldset{
+    text-align: center;
+
+}
