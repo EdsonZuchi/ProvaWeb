@@ -15,8 +15,9 @@
         if(isset($Valor)){
             $_SESSION['SeArray'] = array(0,0,0);
             $Valor = array(0,0,0);
-        }
-        $Valor = $_SESSION['SeArray']; 
+        }else{
+            $Valor = $_SESSION['SeArray'];
+        } 
     ?>
     <div class="button">
         <a href="index.php">
@@ -35,6 +36,9 @@
     <div class="array">
     <?php   
         for($i = 0; $i <3; $i++){ 
+            if($Valor[$i] == null){
+                $Valor[$i] = 0; 
+            }
             if($i == 0){
                 echo "<h2 class=\"info\" style=\"background-color: cadetblue\">".$Valor[$i]."</h2>";
             }else{
